@@ -1,0 +1,308 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --color-primario: #f9a328;
+  --color-secundario: #2b3035;
+  --color-tercer: #ffffff;
+}
+
+html {
+  font-size: 72.5%;
+}
+body {
+  font-family: "Open Sans", sans-serif !important;
+}
+
+.bottons-downloads {
+  color: white;
+  border-radius: 10px 0 0;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  z-index: 1000;
+  background-color: #000000;
+}
+.icons-download {
+  font-size: 28px;
+}
+.navbar-toggler span {
+  color: var(--color-primario);
+  font-weight: 700;
+}
+
+.nav-link-color {
+  color: white !important;
+}
+
+.nav-link.active {
+  color: #f7a41d !important;
+}
+.navbar {
+  color: white;
+  height: 80px;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: var(--color-primario);
+  transition: color 0.3s ease-in-out;
+}
+.nav-item {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nav-item .nav-link {
+  font-family: "Open Sans", sans-serif !important;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 700;
+}
+.navbar-collapse {
+  margin-right: 30px;
+}
+
+.navbar-toggler {
+  font-size: 20px;
+}
+@media (max-width: 992px) {
+  .navbar {
+    height: auto;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    flex-grow: 0;
+    flex: inherit;
+  }
+}
+.container-fluid-header-home {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: url("../assets/e-scooter-5432641_1920.jpg") no-repeat center center/cover;
+}
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.video-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.home-page-container {
+  z-index: 13;
+  padding: 20px;
+  border-radius: 10px;
+}
+.img-home-ipakket {
+  border-radius: 10px;
+  background-image: url(../assets/imgs/Scooter-img.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-product-detail {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding: 20px 10px;
+  background-color: var(--color-secundario);
+}
+
+.product-detail--title {
+  width: 100%;
+  min-width: 288px;
+  height: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+.product-detail--title h2 {
+  margin-bottom: 20px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.5rem;
+  color: var(--color-tercer);
+}
+.product-detail--title p {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: var(--color-tercer);
+}
+.product-detail--card {
+  position: relative;
+  width: 90%;
+  min-width: 288px;
+  max-width: 400px;
+  height: 220px;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: var(--color-tercer);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16s);
+}
+.product-detail--card .icon-cards {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 992px) {
+  .product-detail--card .icon-cards {
+    width: 50px;
+    height: 50px;
+  }
+  .product-detail--card {
+    height: 250px;
+  }
+}
+
+.clock {
+  background-image: url("../assets/video/scooter.gif");
+}
+.eye {
+  background-image: url("../assets/video/eco.gif");
+}
+.dollar {
+  background-image: url("../assets/video/ahorros.gif");
+}
+.check-circle {
+  background-image: url("../assets/video/telefono.gif");
+}
+.product--card-title {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--color-secundario);
+}
+.product--card-body {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #808080;
+}
+.shadow-dow{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  box-shadow: 0px -96px 21px 68px rgba(0,0,0,0.1);
+  z-index: 3;
+}
+.content-home{
+  color: var(--color-tercer);
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+}
+
+.contain-cat {
+  display: flex;
+  padding: 10px;
+  max-width: 180px;
+  min-width: 120px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  color: white;
+  position: relative;
+}
+.contain-cat img {
+  height: 50px;
+} 
+@media (min-width: 930px) {
+  .product-cards--container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 930px;
+    margin: 0 auto;
+  }
+}
+ .scooters-section{
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+.sec-info-cont{
+  width: 100%;
+  height: 100vh;
+}
+
+.row {
+  margin: 15px;
+}
+
+.contact-social {
+  height: 15vh;
+  width: 100%;
+}
+.bi-social {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.spikes {
+  position: relative;
+  background: var(--color-secundario);
+  height: 20vh;
+}
+
+.spikes::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: -0%;
+  bottom: 100%;
+  z-index: 10;
+  display: block;
+  height: 50px;
+  background-size: 50px 100%;
+  background-image: linear-gradient(
+      315deg,
+      var(--color-secundario) 30%,
+      transparent 25%
+    ),
+    linear-gradient(45deg, var(--color-secundario) 30%, transparent 25%);
+  background-position: 0 0;
+}
+.icons-social-about {
+  border-radius: 10px;
+  color: white;
+}
+
+.item {
+  opacity: 0;
+  transform: translateY(20px); /* Desplazamiento inicial */
+  transition: opacity 1s ease, transform 0.5s ease;
+}
+
+.item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
